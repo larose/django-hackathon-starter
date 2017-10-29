@@ -1,0 +1,6 @@
+ALLOWED_HOSTS=127.0.0.1
+ADMIN_EMAIL=youremail
+DATABASE_URL=sqlite:///db.sqlite3
+DEBUG=y
+EMAIL_URL=console://
+SECRET_KEY=nikBeddyoghnothGhet6

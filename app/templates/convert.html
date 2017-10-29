@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% load material_form %}
+{% block title %}Save account{% endblock title %}
+
+{% block content %}
+
+<h1>Hello Hackathon</h1>
+
+<div>
+  <form method="POST">
+    {% csrf_token %}
+    <input type="hidden" name="redirect_to" value="{% url 'home' %}">
+    {% form form=form %}{% endform %}
+    <button type="submit" name="_submit" class="btn">Save account</button>
+  </form>
+</div>
+
+
+{% endblock content %}
